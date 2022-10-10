@@ -1,0 +1,467 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+}
+*{
+  font-family: 'Spectral', serif;
+}
+
+/* navigation bar */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-color:#0e0e0e;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px black;
+  position: relative;
+  margin-top: 20px;
+}
+#logo {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  left: 100px;
+}
+#sub-btn {
+  color: white;
+  background-color: #f9004d;
+  width: 100px;
+  height: 30px;
+  border: 2px solid #f9004d;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 100px;
+}
+#sub-btn:hover{
+  background-color: transparent;
+}
+.dropdown {
+  padding: 1.3em 2.2em;
+  position: relative;
+}
+.dropdown:hover {
+  background-color: rgb(78, 77, 77);
+}
+.dropdown:hover .dropdown-content > a{
+  display: block;
+}
+.dropdown > a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.dropdown > a:hover{
+  color: #f9004d;
+}
+.dropdown-content {
+  position: absolute;
+  top:100%;
+  left: 0;
+  min-width: 160px;
+  background-color: rgb(78, 77, 77);
+}
+.dropdown-content > a{
+  display: none;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.dropdown-content > a:hover{
+  background-color: rgb(50, 50, 53);
+}
+#menu-bar {
+  display: none;
+  margin-right:10px;
+  color: white;
+  font-size: 24px;
+  padding: 0.8em;
+  cursor: pointer;
+}
+
+/* hidden menu bar */
+#menu-hide{
+display: none;
+margin-top: 20px;
+z-index: 2;
+}
+#hidden-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px 20px;
+  background-color: white;
+}
+#logo-hide{
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+}
+#nav-hide{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nav-hide{
+  margin:20px 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.nav-hide:hover{
+  color: #da0e4f;
+}
+#sub-btn-hideBar{
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #da0e4f;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+#sub-btn-hideBar:hover{
+  background-color: #da0e4f;
+  border: 1px solid white;
+}
+#btn-back{
+  font-size: 20px;
+  cursor: pointer;
+  color: #0e0e0e;
+}
+
+
+/*----------greating------------*/
+#greeting {
+ margin-top: 140px;
+ margin-left: 100px;
+}
+#greeting > p,h1,h3,input{
+  margin: 10px;
+  color: white;
+}
+#greeting > h1{
+  font-size: 60px;
+}
+#greeting > p{
+  text-shadow:1px 1px 10px #da0e4f;
+}
+#greeting > input{
+  border: none;
+  height: 28px;
+  width: 150px;
+  border-radius: 20px;
+  padding-left: 15px;
+  color: #191919;
+}
+#greeting > a > button,#decribetion > a > button,.all-sevices >a > button,#hire-me> a > button{
+  border: none;
+  height: 28px;
+  padding-left:10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  background-color: #f9004d;
+  color: white;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+#greeting > a > button:hover,#decribetion > a > button:hover,.all-sevices >a > button:hover,#hire-me > a >button:hover{
+  background-color: transparent;
+}
+
+/*----------------------about me------------------------*/
+
+#about-me{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 151px;
+  margin-bottom: 100px;
+}
+#about-me >#decribetion{
+  width: 40%;
+}
+#about-me >#my-image{
+  width: 350px;
+  height:450px;
+  margin-right: 60px;
+  border: 1px solid #da0e4f;
+}
+#about-me >#my-image> img{
+  width: 350px;
+  height:450px;
+}
+#decribetion > h2{
+  color: white;
+  font-size: 45px;
+  margin: 10px;
+  margin-left: 0;
+  margin-top: 0;
+}
+#decribetion > h3{
+  margin-left: 0;
+}
+#decribetion > p{
+  color: white;
+  width: 70%;
+  text-shadow:1px 1px 5px #da0e4f;
+  word-spacing: 4px;
+  font-size: 14px;
+}
+
+
+/*-----our services-----*/
+#our-service{
+  background-color: #0e0e0e;
+  padding-bottom: 40px;
+}
+#our-service > h2 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 30px;
+}
+#service{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.all-sevices {
+  width: 30%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #191919;
+  border-radius: 20px;
+  color: white;
+}
+.all-sevices > i{
+  font-size: 30px;
+  color: #f9004d;
+}
+
+/*----hire me------*/
+#hire-me {
+  background-color: #191919;
+  color: white;
+  text-align: center;
+  padding: 30px 0 70px 0;
+}
+#hire-me > a > button > i {
+  font-size: 12px;
+  display: none;
+}
+#hire-me > a > button:hover > i {
+  display:inline-block;
+}
+#hire-me > a > button:hover{
+  width: 95px;
+}
+
+/*---footer----*/
+footer{
+  text-align: center;
+  color: white;
+  background-color: #0e0e0e;
+  padding: 40px 0 30px 0;
+}
+footer >h2{
+  font-size: 27px;
+  transition: color 0.5s;
+}
+footer > h2:hover{
+  background: linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(165,82,180,1) 31%, rgba(184,78,159,1) 44%, rgba(252,70,107,1) 96%);
+  color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+#social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer > p {
+  text-shadow: 2px 1px 3px #da0e4f;
+}
+#social-media> a> i{
+  padding: 20px;
+  font-size: 30px;
+  color: #da0e4f;
+  cursor: pointer;
+  transition:color 1s;
+}
+#social-media> a> i:hover{
+  background: linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(165,82,180,1) 31%, rgba(184,78,159,1) 44%, rgba(252,70,107,1) 96%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+/*----scroll bar-------*/
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #f33f6c #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f33f6c;
+}
+
+
+/*----------responsive webpage---------------*/
+@media only screen and (max-width: 958px) {
+  #service {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #sub-btn{
+    right: 20px;
+  }
+  #logo {
+    left: 20px;
+  }
+  #about-me >#my-image,#about-me >#my-image> img{
+    width: 300px;
+    height:400px;
+  }
+  #decribetion > p{
+    width: 90%;
+  }
+  #service {
+    width: 85%;
+  }
+  .all-sevices{
+    width: 32%;
+  }
+
+}
+@media only screen and (max-width: 750px) {
+  #service {
+    width: 90%;
+  }
+  #decribetion > p{
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  nav {
+    justify-content: flex-end;
+  }
+  #sub-btn{
+    display: none;
+  }
+  #service {
+    flex-direction: column;
+    width: 100%;
+  }
+  .all-sevices{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .dropdown {
+    padding: 1.3em 1.6em;
+    position: relative;
+  }
+  #about-me >#my-image,#about-me >#my-image> img{
+    width: 270px;
+    height:330px;
+  }
+}  
+
+@media only screen and (max-width: 600px) {
+  #greeting {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 130px;
+   }
+  #decribetion > h2{
+    font-size: 40px;
+  }
+  #decribetion > p{
+    font-size: 13px;
+  }
+  #about-me >#my-image{
+    margin-left: 10px;
+  }
+} 
+@media only screen and (max-width: 520px) {
+  #menu-hide{
+    position: fixed;
+    top: 0;
+    display: block;
+    transform: translate(-100%,0);
+    height: 100%;
+    width: 100vw;
+    background-color:#191919;
+  }
+  .dropdown> a,.dropdown-content,.dropdown:hover{
+    display: none;
+  }
+  #menu-bar{
+    display: block;
+  }
+  #greeting > h1{
+    font-size: 50px;
+  }
+ 
+  #about-me >#decribetion{
+    margin-top: 10px;
+    width: 70%;
+  }
+  #decribetion > h2{
+    font-size: 35px;
+  }
+  #decribetion > p{
+    font-size: 11px;
+  }
+  #about-me{
+    flex-direction: column;
+  }
+  #about-me >#my-image,#about-me >#my-image> img{
+    width: 250px;
+    height:300px;
+  }
+  #decribetion > p{
+    font-size: 14px;
+  }
+} 
+@media only screen and (max-width: 436px) {
+  #greeting > h1 {
+    font-size: 40px;
+  }
+  .all-sevices{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 335px) {
+  #greeting{
+    width: 90%;
+  }
+}
